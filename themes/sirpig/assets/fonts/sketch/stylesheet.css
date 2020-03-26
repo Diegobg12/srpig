@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Sketch_PersonalUseOnly';
+    src: url('SketchPersonalUseOnly.eot');
+    src: url('SketchPersonalUseOnly.eot?#iefix') format('embedded-opentype'),
+        url('SketchPersonalUseOnly.woff2') format('woff2'),
+        url('SketchPersonalUseOnly.woff') format('woff'),
+        url('SketchPersonalUseOnly.ttf') format('truetype'),
+        url('SketchPersonalUseOnly.svg#SketchPersonalUseOnly') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sketch Light_PersonalUseOnly';
+    src: url('SketchLightPersonalUseOnly.eot');
+    src: url('SketchLightPersonalUseOnly.eot?#iefix') format('embedded-opentype'),
+        url('SketchLightPersonalUseOnly.woff2') format('woff2'),
+        url('SketchLightPersonalUseOnly.woff') format('woff'),
+        url('SketchLightPersonalUseOnly.ttf') format('truetype'),
+        url('SketchLightPersonalUseOnly.svg#SketchLightPersonalUseOnly') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+

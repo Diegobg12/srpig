@@ -11,7 +11,7 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
+					<p>Diseñado por Valent design y Desarrollado por <br>Diego Bustos </p>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
@@ -20,3 +20,12 @@
 
 	</body>
 </html>
+
+<div class="social-media">
+ <p>Siguenos en:</p>
+        <a href="https://www.facebook.com/SirpigColombia">
+        <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com/SirpigColombia/">
+            <i class="fab fa-instagram-square"></i>
+        </a> </div>

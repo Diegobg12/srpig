@@ -46,15 +46,27 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 *
 	 * @hooked woocommerce_template_loop_product_title - 10
 	 */
+
+	?>
+
+
+	<div class='title-product'>
+
+	<?php
 	do_action( 'woocommerce_shop_loop_item_title' );
 
+	?>
+	<img class="botton-add"src="<?php echo get_template_directory_uri(); ?>/assets/logo/add-button.svg" alt="logo">
+		<p> Agregar al carrito de compras</p>
+	</div>
+
+	<?php
 	/**
 	 * Hook: woocommerce_after_shop_loop_item_title.
 	 *
 	 * @hooked woocommerce_template_loop_rating - 5
 	 * @hooked woocommerce_template_loop_price - 10
 	 */
-	do_action( 'woocommerce_after_shop_loop_item_title' );
 
 	/**
 	 * Hook: woocommerce_after_shop_loop_item.
@@ -64,4 +76,5 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 */
 	do_action( 'woocommerce_after_shop_loop_item' );
 	?>
+
 </li>

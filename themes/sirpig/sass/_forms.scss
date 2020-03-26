@@ -60,3 +60,77 @@ textarea {
 	padding-left: 3px;
 	width: 100%;
 }
+
+
+.menu-toggle{
+	border: unset;
+	border-color: none;
+	border-radius: 0px;
+	background: transparent;
+	box-shadow: none;
+	color: $white;
+	line-height: 1;
+	padding: 0;
+	text-shadow: none;
+	margin-left: 15px;
+	font-size: 1.3rem;
+}
+
+.wpcf7{
+	width: 90%;
+	margin: auto;
+}
+
+.wpcf7-form{
+
+	p{
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+		h3{
+			padding: 0;
+			margin: 0;
+			font-family: $font_title;
+			font-size: 2rem;
+		}
+
+	h3::after{
+		content: url('../../assets/logo/after-title.svg');
+
+	}
+
+	input{
+		padding: 3%;
+		width: 318px;
+		background: rgb(193,193,193);
+		background: linear-gradient(90deg, rgba(193,193,193,1) 0%, rgba(99,99,99,1) 100%);
+	}
+	textarea{
+		padding: 3%;
+		width: 318px;
+		height: 98px;
+		background: rgb(193,193,193);
+		background: linear-gradient(90deg, rgba(193,193,193,1) 0%, rgba(99,99,99,1) 100%);
+	}
+
+	.wpcf7-submit{
+		padding: 5%;
+		font-family: $font_title;
+		font-size: 2rem;
+		border-radius: 15px;
+		background: $grey;
+		border-color: $grey;
+		border: solid;
+		width: 132.32px;
+		height: 45px;
+		padding: 0;
+		align-items: center;
+		margin-top: 2%;
+		color: #5D5D5D;
+		
+	}
+}

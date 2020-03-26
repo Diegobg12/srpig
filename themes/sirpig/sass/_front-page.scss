@@ -1,0 +1,68 @@
+
+.front-page{
+
+
+    .social-media{
+        text-align: center;
+    
+        i{
+            font-size: 2.5rem;
+            margin: 0% 1%;
+        }
+    }
+    
+    .woocommerce {
+        width: 90%;
+        margin: auto;
+
+        .products{
+            .botton-add{
+                width: 25.74px!important;
+                @include reset;
+
+            }
+            li{
+                position: relative;
+                width: 180px !important;
+                height: 231px;
+                overflow: hidden;
+
+         
+                 .button{
+                 display: none;
+                }
+
+                .title-product{
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: center;
+                    top: 0;
+                    left:0;
+                    width: 180px !important;
+                    height: 231px;
+                    background: rgba(0, 0, 0, 0.3); 
+                    h2{
+                        font-family: Sketch_PersonalUseOnly;
+                        font-size: 10vw;
+                        line-height: 0.8;
+                        padding: 0;
+                        margin: 10% 2%;
+                    }
+                    p{
+                        @include reset;
+
+                    }
+                }
+
+                .attachment-woocommerce_thumbnail{
+                    height: 231px;
+                    width: 180px;
+                }
+
+            }
+        }
+    }
+}

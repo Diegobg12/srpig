@@ -33,7 +33,6 @@ plugins/*
 !plugins/business-info/
 !plugins/contact-form-7
 !plugins/woocommerce
-!plugins/woocommerce-admin
 
 
 # Ignore everything in "themes" except the active theme. #
@@ -44,6 +43,8 @@ themes/*
 # Ignore npm packages #
 # =================== #
 themes/sirpig/node_modules/*
+themes/storefront/node_modules/*
+
 
 # Ignore build files #
 # ================== #

@@ -2,6 +2,8 @@
 # Typography
 --------------------------------------------------------------*/
 
+@import "../../assets/fonts/sketch/stylesheet.css";
+
 body,
 button,
 input,
@@ -17,6 +19,38 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+}
+
+
+
+
+
+.title-image{
+	font-family: "Sketch_PersonalUseOnly";
+	font-weight: 100;
+	font-size: 50px;
+	background: url(../../assets/logo/tittle-back.svg) no-repeat;
+	color: $grey;
+    background-size: 57%;
+    background-position-x: 49%;
+    background-position-y: 107%;
+	height: 89px;
+	margin: 5% 0%;
+
+
+	@include pcandtb{
+
+		font-family: Sketch_PersonalUseOnly;
+		font-weight: 100;
+		font-size: 5rem;
+		background: url(../../assets/logo/tittle-back.svg) no-repeat;
+		background-size: 34%;
+		background-position-x: 49%;
+		background-position-y: 81%;
+		height: 168px;
+		margin: 2% 0%;
+	}
+
 }
 
 /* Copy */
@@ -66,3 +100,5 @@ mark, ins {
 big {
 	font-size: 125%;
 }
+
+

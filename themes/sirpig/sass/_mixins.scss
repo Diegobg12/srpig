@@ -1,3 +1,38 @@
+$sp: 415px; 
+$tb: 767px;
+$pc: 980px; 
+
+@mixin sp {
+  @media (max-width: $sp) {
+    @content;
+  }
+}
+
+@mixin tb {
+  @media (min-width: $sp) and (max-width: $pc) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (min-width: $pc) {
+    @content;
+  }
+}
+
+@mixin pcandtb{
+  @media (min-width: $tb) {
+    @content;
+  }
+}
+
+@mixin reset{
+padding: 0;
+margin: 0;
+}
+
+
+
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
 	font-size: ($sizeValue * 16) * 1px;
@@ -10,3 +45,17 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+@mixin flex-column {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+
+@mixin flex-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
