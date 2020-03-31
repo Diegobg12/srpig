@@ -39,7 +39,6 @@ if ( ! comments_open() ) {
 			?>
 		</h2>
 
-
 		<?php if ( have_comments() ) : ?>
 			<ol class="commentlist">
 				<?php wp_list_comments( apply_filters( 'woocommerce_product_review_list_args', array( 'callback' => 'woocommerce_comments' ) ) ); ?>
@@ -92,7 +91,7 @@ if ( ! comments_open() ) {
 						'value'    => $commenter['comment_author'],
 						'required' => $name_email_required,
 					),
-					'email' => array(
+					'email'  => array(
 						'label'    => __( 'Email', 'woocommerce' ),
 						'type'     => 'email',
 						'value'    => $commenter['comment_author_email'],

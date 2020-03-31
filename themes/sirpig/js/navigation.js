@@ -7,3 +7,6 @@ button.click(function() {
 })
 
 
+let product= $('.single-product').children(':first');
+
+product.addClass('hola')

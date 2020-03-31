@@ -1,0 +1,105 @@
+.checkout-page{
+    width: 90%;
+    margin: 8% auto;
+    margin-bottom: 0%;
+
+    .woocommerce-checkout{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        #pi_checkout_field{
+            width: 100%;
+        }
+    }
+
+    h3{
+        display: none;
+    }
+
+    .col-1{
+        width: 100%!important;
+
+        @include pcandtb{
+        width: 80%!important;
+
+        }
+    }
+
+    .woocommerce-checkout-review-order{
+        margin-top: 5%;
+        width: 100%;
+        padding: 5%;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        border-radius: 13px;
+        @include pcandtb{
+            width: 50%;
+        }
+    }
+
+
+.col2-set{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    @include pcandtb{
+        width: 50%;
+
+    }
+}
+
+h1{
+    font-family: $font_title;
+    font-weight: 100;
+    font-size: 3rem;
+    background: url(../../assets/logo/tittle-back.svg) no-repeat;
+    color: $grey;
+    background-size: 83%;
+    background-position-x: 46%;
+    background-position-y: 20px;
+    height: 89px;
+    margin: 5% 0%;
+    text-align: center;
+
+    @include pcandtb{
+
+        font-family: $font_title;
+        font-weight: 100;
+        font-size: 3rem;
+        background: url(../../assets/logo/tittle-back.svg) no-repeat;
+        background-size: 45%;
+        background-position-x: 50%;
+        background-position-y: 16%;
+        height: 115px;
+        margin: 2% 0%;
+        
+    }
+
+}
+
+
+}
+    .woocommerce-info{
+        background-color: transparent;
+        padding: 1em 2em 1em 3.5em;
+        margin: 0 0 2em;
+        position: relative;
+        border-top: 3px solid $mediumgrey!important;
+        border-bottom: 3px solid $mediumgrey!important;
+        list-style: none outside;
+        width: auto;
+        word-wrap: break-word;
+        color: $mediumgrey;
+    
+        a{
+            color: $mediumgrey!important;
+            background: $grey!important;
+        }
+    }
+
+    .alt{
+        font-family: $font_title;
+        font-size: 3rem;
+        background: #b5b4b2!important;
+        color: #76736c!important;
+    }

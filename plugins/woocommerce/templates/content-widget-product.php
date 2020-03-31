@@ -32,6 +32,7 @@ if ( ! is_a( $product, 'WC_Product' ) ) {
 		<?php echo $product->get_image(); // PHPCS:Ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 		<span class="product-title"><?php echo wp_kses_post( $product->get_name() ); ?></span>
 	</a>
+
 	<?php if ( ! empty( $show_rating ) ) : ?>
 		<?php echo wc_get_rating_html( $product->get_average_rating() ); // PHPCS:Ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 	<?php endif; ?>

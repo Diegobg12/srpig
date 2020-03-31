@@ -31,7 +31,15 @@ padding: 0;
 margin: 0;
 }
 
-
+@mixin input {
+  background-color: $grey;
+  color: $darkgrey;
+  padding: 3%;
+  margin: 2%;
+  text-align-last:center;
+  font-size: 1.5rem;
+  border-radius: 3px;
+}
 
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
