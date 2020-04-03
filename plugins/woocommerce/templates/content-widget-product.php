@@ -38,6 +38,6 @@ if ( ! is_a( $product, 'WC_Product' ) ) {
 	<?php endif; ?>
 
 	<?php echo $product->get_price_html(); // PHPCS:Ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-
+		
 	<?php do_action( 'woocommerce_widget_product_item_end', $args ); ?>
 </li>

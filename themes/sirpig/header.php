@@ -50,6 +50,10 @@
 					</div><!-- #site-navigation -->
 				
 
+					<div id="secondary" class="social-container" role="complementary">
+						<?php dynamic_sidebar( 'sidebar-1' ); ?>
+					</div><!-- #secondary -->
+
 
 			</header><!-- #masthead -->
 

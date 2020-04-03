@@ -28,7 +28,7 @@
     <?php if (strlen(trim($instagram))>0): ?>
 <div>
         <a href="https://instagram.com/<?php echo $instagram; ?>/">
-            <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-instagram"></i>
         </a>
 </div>
     <?php endif; ?>

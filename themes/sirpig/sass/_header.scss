@@ -1,14 +1,14 @@
 
 .site-header{
 background-color: $darkgrey;
-padding: 1% 5%;
+padding: .5% 5%;
 @include flex-row;
 width: 100%;
 align-items: center;
 justify-content: space-between;
 top: 0;
 z-index: 9999999!important;
-background: rgba(0, 0, 0, 0.3); 
+background: $white; 
 position: fixed;
 @include pcandtb{
 
@@ -34,13 +34,28 @@ position: fixed;
 
     @include pcandtb{
         @include flex-row;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
         margin: 0;
     }
 
+    li {
+        border-right: 1px solid $darkgrey!important;
+        line-height: 2;
+         padding: 0 0.5rem!important;
+    
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      border-right: 0;
+    }
+
+    }
+
     a{
-        margin: 0 15px;
+        margin: 0 25px;
         text-decoration: none;
     }
 }
@@ -61,7 +76,7 @@ position: fixed;
     position: relative;
     display: flex;
     align-items: center;
-    color: $white;
+    color: $mediumgrey;
 
 
 
@@ -89,17 +104,29 @@ position: fixed;
     color: $white;
 }
 
-img{
-
-    height: 50px;
-    @include pcandtb{
-    height: 60px;
-
+.logo-header{
+    img{   
+        height: 60px;
     }
 }
 
-
-    
+.cart{
+    img{   
+        height: 40px;
+    }   
+}
+.social-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 18px;
+    top: 40vh;
+    font-size: 26px;
+    a{
+        
+        color: $red;
+    }
+}
 }
 
 

@@ -1,5 +1,86 @@
 .site-footer{
-    width: 50%;
+    width: 89%;
     margin: auto;
     text-align: center;
+    background-color: $white;
+   
+    .horario{
+        @include flex-column;
+        h2{
+            text-align: left; 
+        }
+        p{
+            @include reset;
+            text-align: left;
+        }
+        ul{
+            @include reset;
+            text-align: left;
+            a{
+                color: $grey;
+            }
+
+        }
+        }
+        .ubicaciones{
+            width: 100%;
+            margin: 1% 0% 5% 0%;
+            @include flex-row;
+            justify-content: space-evenly;
+            button{
+                background:none;
+                border: none;
+                font-size: 1rem;
+            }
+            button:hover{
+                color: $red;
+                background:none;
+                border: none;
+            }
+            .active{
+                color: $red;
+                text-decoration: underline;
+           
+            }
+
+        }
+    
+    .copyRight{
+        width: 50%;
+        margin: auto;
+        @include pcandtb{
+        width: 20%;
+
+        }
+        p{
+                @include reset;
+                padding: 2%!important;
+                 font-size: 12px!important;
+                 font-weight: normal;
+                 font-stretch: normal;
+                 font-style: normal;
+                 line-height: 1.1;
+                 letter-spacing: normal;
+                 text-align: center;
+                 color: $grey;
+        }
+    }
+
+    .info-footer{
+        @include flex-row;
+        justify-content: space-between;
+        width: 100%;
+        margin: auto;
+        padding: 5% 10%;
+    }
+
+    .map{
+        display: none;
+
+    }
+
+    .show{
+        display: unset;
+    }
+
 }

@@ -1,229 +1,23 @@
 
 .front-page{
-    .contacto{
-        p{
-            @include reset;
-            margin: 5% 0%;
-        }
-     
-        font-size: 30px;
-    }
-
-    .fas:before {
-        color: $mediumgrey!important;
-        margin-right: 19px;
-    }
-
-    .info{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 80%;
-        height: 50%;
-        font-size: 1.5rem;
-        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-        padding: 6%;
-        a{
-            font-family: $font__main!important;
-            color: $mediumgrey!important;
-        }
-        
-        p{
-            font-family: $font__main!important;
-
-        a{
-            font-family: $font__main!important;
-            color: $mediumgrey!important;
-
-            i{
-            text-decoration: underline!important;
-            color: $mediumgrey!important;
-        }
-        }
-    }
-    }
-
-        .nosotros{
-                padding: 5%;
-                width: 100%;
-                height: 100%;
-                margin: auto;
-                background: rgba(0, 0, 0, 0.3); 
-
-            @include pcandtb{
-                padding: 7%;
-                width: 50%;
-                height: 100%;
-                margin: auto;
-            }
-
-        }
-
-
-    .contacto-maps{
-        display: flex;
-        flex-direction: column;
-        iframe{
-            border-radius: 22px!important;
-        }
-        
-        @include pcandtb{
-            flex-direction: row;
-            .contact{
-                width: 50%;
-            }
-            .maps{
-                width: 50%;
-            }
-            .title-image{
-                background-size: 70%;
-                background-position-x: 48%;
-                background-position-y: 56%;
-            }
-
-
-        }
-    }
 
     .social-media{
         text-align: center;
-    
+        a{
+            color: $white;
+        }
+        a:hover{
+            color: $red;
+        }
         i{
             font-size: 2.5rem;
             margin: 0% 1%;
         }
     }
-    
-    .woocommerce {
+
+    .products-section{
         width: 90%;
         margin: auto;
-
-        .products{
-
-            .woocommerce-loop-product__title{
-                display: flex;
-                position: absolute;
-                top: 0px;
-                height: 100%;
-                width: 100%;
-                justify-content: center;
-                align-items: center;
-                font-family: $font_title;
-                font-size: 3rem!important;
-                line-height: 1;
-                background-size: 100%;
-                background-position-y: 110px;
-                background-color: rgba(0, 0, 0, 0.3);
-
-                @include pcandtb{
-                font-size: 3.5rem!important;
-                background-position-y: 140px;
-
-                }
-            }
-            .woocommerce-loop-product__title:hover{
-                background-color: unset;
-
-            }
-
-            .woocommerce-loop-product__title::before{
-                position: absolute;
-                content: url(../../assets/logo/add-button.svg);
-                transform: scale(1);
-                bottom: 24px;
-                @include pcandtb{
-                    transform: scale(2);
-                    bottom: 61px;
-                }
-            }
-
-
-            .woocommerce-loop-product__title::after{
-                position: absolute;
-                content: "Agregar al carrito";
-                font-family: $font__main;
-                font-size: 10px;
-                bottom: 26px;
-                @include pcandtb{
-                    transform: scale(2);
-                    bottom: 50px;
-                }
-            }
-            .botton-add{
-                width: 25.74px!important;
-                @include reset;
-                @include pcandtb{
-                width: 45px!important;
-
-                }
-            }
-            li{
-                position: relative;
-                width: 48% !important;
-                height: 231px;
-                overflow: hidden;
-                margin: 2% 0%!important;
-                @include pcandtb{
-                    width: 29%!important;
-                    height: 359px;
-                    margin: 2% 2%!important;
-
-                }
-
-         
-                 .button{
-                 display: none;
-                }
-
-                .title-product{
-                    position: absolute;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    text-align: center;
-                    justify-content: center;
-                    top: 0;
-                    left:0;
-                    width: 100% !important;
-                    height: 231px;
-                    background: rgba(0, 0, 0, 0.3); 
-                    @include pcandtb{
-                        width: 100%!important;
-                        height: 359px;
-                    }
-                    h2{
-                        font-family: $font_title;
-                        font-size: 10vw;
-                        line-height: 0.8;
-                        padding: 0;
-                        margin: 10% 2%;
-
-                        @include pcandtb{
-                            font-size: 8vw;
-                            padding: 0;
-                            margin: 5% 2%;
-
-                        }
-                    }
-                    p{
-                        @include reset;
-                        @include pcandtb{
-                          width: 50%;
-
-                        }
-                    }
-                }
-
-                .attachment-woocommerce_thumbnail{
-                    height: 231px;
-                    width: 100%;
-                    @include pcandtb{
-                        width: 100%;
-                        height: 359px;
-                    }
-                }
-
-            }
-        }
     }
+    
 }

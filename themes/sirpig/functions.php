@@ -1,10 +1,10 @@
 <?php
 /**
- * RED Starter Theme functions and definitions.
+ * SirPig Theme functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package RED_Starter_Theme
+ * @package SirPig
  */
 
 if ( ! function_exists( 'red_starter_setup' ) ) :
@@ -24,6 +24,7 @@ function red_starter_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html( 'Primary Menu' ),
+		'secondary' => esc_html('Menu 2')
 	) );
 
 	// Switch search form, comment form, and comments to output valid HTML5.
@@ -66,6 +67,19 @@ function red_starter_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'red_starter_widgets_init' );
+
+function contact_widgets_init() {
+	register_sidebar( array(
+		'name'          => esc_html( 'Sidebar2' ),
+		'id'            => 'sidebar-2',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'contact_widgets_init' );
 
 /**
  * Filter the stylesheet_uri to output the minified CSS file.

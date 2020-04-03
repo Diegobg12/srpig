@@ -6,14 +6,17 @@
 
 a {
 	color: $color__link;
+	font-weight: bold;
 
 	&:visited {
 		color: $color__link-visited;
 	}
-	&:hover,
+	&:hover{
+		color: $red;
+	}
 	&:focus,
 	&:active {
-		color: $color__link-hover;
+		color: $red;
 	}
 	&:focus {
 		outline: thin dotted;
@@ -23,6 +26,8 @@ a {
 		outline: 0;
 	}
 }
+
+
 
 /* Menus */
 

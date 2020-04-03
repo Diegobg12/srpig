@@ -26,9 +26,21 @@ $pc: 980px;
   }
 }
 
+@mixin title-product {
+  @include reset;
+	text-align: center;
+	font-size: $title-size--pc!important;
+	font-family: $font_title;
+	color: $wine;
+	line-height: 1;
+	@include sp{
+		letter-spacing: 0;
+		font-size: $title-size--sp!important;
+	}
+}
 @mixin reset{
-padding: 0;
-margin: 0;
+padding: 0!important;
+margin: 0!important;
 }
 
 @mixin input {

@@ -24,6 +24,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
+
 <li <?php wc_product_class( '', $product ); ?>>
 	<?php
 	/**
@@ -40,21 +41,28 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 * @hooked woocommerce_template_loop_product_thumbnail - 10
 	 */
 	do_action( 'woocommerce_before_shop_loop_item_title' );
+	?>
 
+<div class="add-cart">
+		<img src="<?php echo get_template_directory_uri();?>/assets/logo/add-button.svg" alt="">
+		<p>Agregar al carrito de compras</p>
+	</div>
+
+	<div class ="product-description">
+	<?php
 	/**
 	 * Hook: woocommerce_shop_loop_item_title.
 	 *
 	 * @hooked woocommerce_template_loop_product_title - 10
 	 */
+	
 	do_action( 'woocommerce_shop_loop_item_title' );
-
-	/**
+		/**
 	 * Hook: woocommerce_after_shop_loop_item_title.
 	 *
 	 * @hooked woocommerce_template_loop_rating - 5
 	 * @hooked woocommerce_template_loop_price - 10
 	 */
-	do_action( 'woocommerce_after_shop_loop_item_title' );
 
 	/**
 	 * Hook: woocommerce_after_shop_loop_item.
@@ -63,5 +71,11 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 * @hooked woocommerce_template_loop_add_to_cart - 10
 	 */
 	do_action( 'woocommerce_after_shop_loop_item' );
+	
+	$description = $product->get_short_description();
 	?>
+	<p><?php echo $description ?></p>
+	</div>
+
 </li>
+
