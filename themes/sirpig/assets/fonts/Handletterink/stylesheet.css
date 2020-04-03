@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Handletterink';
+    src: url('HandletterinkRegular.eot');
+    src: url('HandletterinkRegular.eot?#iefix') format('embedded-opentype'),
+        url('HandletterinkRegular.woff2') format('woff2'),
+        url('HandletterinkRegular.woff') format('woff'),
+        url('HandletterinkRegular.ttf') format('truetype'),
+        url('HandletterinkRegular.svg#HandletterinkRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
