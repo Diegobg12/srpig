@@ -25,7 +25,7 @@
 				
 
 
-				<a class="logo-header" href="/">
+				<a class="logo-header" href="/srpig">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/logo/logosinfondo.png" alt="logo">
 				</a>
 

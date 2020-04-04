@@ -8,8 +8,8 @@
 ?>
 
 			</div><!-- #content -->
-
 			<footer id="colophon" class="site-footer" role="contentinfo">
+				<div id="contactenos"></div>
 				<div class="site-info">
 
 				<div class='info-footer'>

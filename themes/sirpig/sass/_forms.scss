@@ -75,12 +75,12 @@ textarea {
 }
 
 .wpcf7{
-	width: 90%;
+	width: 100%;
 	margin: auto;
 
 	@include pcandtb{
 	width: 70%;
-
+	margin: auto;
 	}
 }
 

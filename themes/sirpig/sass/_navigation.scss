@@ -6,7 +6,7 @@
 
 a {
 	color: $color__link;
-	font-weight: bold;
+	font-weight: 500;
 
 	&:visited {
 		color: $color__link-visited;
@@ -96,6 +96,15 @@ a {
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
+	}
+	color: $red!important;
+	text-decoration: underline;
+}
+.current-menu-item{
+	a{
+
+		color: $red!important;
+		text-decoration: underline;
 	}
 }
 

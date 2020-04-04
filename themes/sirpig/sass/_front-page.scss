@@ -1,6 +1,4 @@
 
-.front-page{
-
     .social-media{
         text-align: center;
         a{
@@ -14,10 +12,193 @@
             margin: 0% 1%;
         }
     }
+.front-page{
+
+    .nosotros-section{
+
+        .wp-block-group__inner-container{
+            @include flex-row;
+            background-color: $white;
+            box-shadow: $overlay;
+            width: 89%;
+            margin: auto;
+            .wp-block-group__inner-container{
+                width: 50%;
+                @include sp{
+                width: 100%;
+                }
+            }
+            .nosotros-intro{
+                padding: 3%;
+                width: 30%;
+                p{
+                text-align: justify;
+                display: flex;
+                align-items: right;
+                justify-content: flex-end;
+                @include sp{
+                    margin: 0% 5%;
+                }
+                }
+                
+                @include sp{
+                width: 100%;
+                }
+    
+            }
+            @include sp{
+                @include flex-column;
+            }
+        }
+
+    }
 
     .products-section{
-        width: 90%;
+        width: 89%;
         margin: auto;
     }
+
+}
+
+.events-sectios{
+    width: 89%;
+    margin: auto;
+    background-color: $white;
+    position: relative;
+    margin-bottom: 2%;
+    margin-top: 3%;
+    box-shadow: $overlay;
+    h2{
+        @include title-product;
+        text-align: left;
+        font-size: 1.3rem;
+    }
+ 
+    .bell{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+    .card-container{
+        @include flex-row;
+        @include sp{
+        @include flex-column;
+
+        }
+        flex-wrap: wrap;
+        .image-card{
+            width: 50%;
+            height: 414px;
+            @include sp{
+                width: 100%;
+                height: 314px;
+                }
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .eventos-container{
+            width: 50%;
+            height: 414px;
+            padding: 5%;
+            @include sp{
+                width: 100%;
+                height: 345px;
+               
     
+                }
+            .description-event{
+                width: 80%;
+            }
+            a{
+                text-decoration: none!important;
+            }
+            .more-events{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                border-top: 4px solid $grey;
+                padding-top: 2%;
+                margin-top: 8%;
+    
+            }
+        }
+    }
+}
+
+
+.eventos{
+  h1{
+      width: 89%;
+      margin: auto;
+      margin-top: 5%;
+      text-align: center;
+  }
+}
+
+.center-blog{
+    width: 89%;
+    margin: auto;
+    margin-top: 5%;
+
+    ul{
+        @include reset;
+    }
+}
+
+.mision-vision{
+    @include flex-column;
+    justify-content: space-between;
+
+    @include pcandtb{
+        @include flex-row;
+    }
+    h2{
+        @include title-product;
+        text-align: left;
+    }
+    p{
+        margin: 0;
+    }
+    .mision{
+        width: 45%;
+        background: $white;
+        box-shadow: $overlay;   
+        padding: 6% 5% 3% 5%;
+        border: 2px solid $mediumgrey;
+        position: relative;
+        .fas{
+            color: $red;
+            position: absolute;
+            top: 2%;
+            right: 2%;
+            font-size: 40px;
+        }
+        @include sp{
+            width: 100%;
+            margin: 5% 0%;
+        }
+    }
+
+    .vision{
+        width: 45%;
+        background: $white;
+        box-shadow: $overlay;
+        border: 2px solid $mediumgrey;
+        padding: 6% 5% 3% 5%;
+        position: relative;
+        .fas{
+            color: $red;
+            position: absolute;
+            top: 2%;
+            right: 2%;
+            font-size: 40px;
+        }
+        @include sp{
+            margin: 5% 0%;
+            width: 100%;
+        }
+
+    }
 }

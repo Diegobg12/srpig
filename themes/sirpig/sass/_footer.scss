@@ -3,7 +3,22 @@
     margin: auto;
     text-align: center;
     background-color: $white;
-   
+    .widget{
+        margin: 0;
+    }
+    #myDIV{
+        h2{
+            width: 80%;
+            margin: auto;
+        }
+    }
+    h2{
+        text-align: left; 
+        @include pcandtb{
+        text-align: unset; 
+
+        }
+    }
     .horario{
         @include flex-column;
         h2{
@@ -48,6 +63,7 @@
     .copyRight{
         width: 50%;
         margin: auto;
+        padding-bottom: 3% ;
         @include pcandtb{
         width: 20%;
 

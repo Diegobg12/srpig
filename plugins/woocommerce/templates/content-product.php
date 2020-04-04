@@ -26,6 +26,11 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 ?>
 
 <li <?php wc_product_class( '', $product ); ?>>
+<?php $productId = $product->get_id();?>
+	<div class="add-cart">
+		<?php  echo do_shortcode('[woosq id='.$productId.']'); ?>
+		<p>Agregar al carrito</p>
+	</div>
 	<?php
 	/**
 	 * Hook: woocommerce_before_shop_loop_item.
@@ -42,11 +47,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 */
 	do_action( 'woocommerce_before_shop_loop_item_title' );
 	?>
-
-<div class="add-cart">
-		<img src="<?php echo get_template_directory_uri();?>/assets/logo/add-button.svg" alt="">
-		<p>Agregar al carrito de compras</p>
-	</div>
 
 	<div class ="product-description">
 	<?php
