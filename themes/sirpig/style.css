@@ -958,7 +958,7 @@ html {
   .domicilios-widget aside div {
     margin: 15px; }
   .domicilios-widget aside img {
-    width: 80px;
+    width: 65px;
     height: 60px; }
 
 .sirpigGoLogo {
@@ -1151,7 +1151,7 @@ html {
     margin: 0; }
   .site-footer #myDIV h2 {
     width: 80%;
-    margin: auto; }
+    margin: 2% auto; }
   .site-footer h2 {
     text-align: left; }
     @media (min-width: 767px) {
@@ -1166,7 +1166,11 @@ html {
         -ms-flex-direction: column;
             flex-direction: column;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    width: 100%; }
+    @media (min-width: 767px) {
+      .site-footer .horario {
+        width: 50%; } }
     .site-footer .horario h2 {
       text-align: left; }
     .site-footer .horario p {
@@ -1244,6 +1248,12 @@ html {
     display: none; }
   .site-footer .show {
     display: unset; }
+
+.contactenos-form {
+  width: 100%; }
+  @media (min-width: 767px) {
+    .contactenos-form {
+      width: 50%; } }
 
 .product_page .product-single {
   padding: 0 !important;
@@ -1441,6 +1451,9 @@ html {
           height: 460px; } }
       .events-sectios .card-container .eventos-container .description-event {
         width: 80%; }
+        @media (max-width: 415px) {
+          .events-sectios .card-container .eventos-container .description-event {
+            width: 100%; } }
       .events-sectios .card-container .eventos-container a {
         text-decoration: none !important; }
       .events-sectios .card-container .eventos-container .more-events {

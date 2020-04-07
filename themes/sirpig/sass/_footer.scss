@@ -9,7 +9,7 @@
     #myDIV{
         h2{
             width: 80%;
-            margin: auto;
+            margin: 2% auto;
         }
     }
     h2{
@@ -18,9 +18,16 @@
         text-align: unset; 
 
         }
+
+
     }
     .horario{
         @include flex-column;
+        width: 100%;
+        @include pcandtb{
+            width: 50%;
+        
+            }
         h2{
             text-align: left; 
         }
@@ -99,4 +106,12 @@
         display: unset;
     }
 
+}
+
+.contactenos-form{
+    width: 100%;
+    @include pcandtb{
+        width: 50%;
+        
+    }
 }

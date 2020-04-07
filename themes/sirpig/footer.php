@@ -30,7 +30,7 @@
 					</div>
 		
 					
-					<div>
+					<div class="contactenos-form">
 					<h2>CONTACTANOS</h2>
 					<?php echo do_shortcode('[contact-form-7 id="6" title="CONTACTENOS"]'); ?>
 					</div>
