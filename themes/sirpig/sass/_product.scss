@@ -1,0 +1,60 @@
+
+.product_page{
+
+    .product-single{
+        @include reset;
+        background: $white;
+        padding: 3%!important;
+        box-shadow: $overlay;
+
+        h1{
+            @include title-product;
+        }
+        .deciption-cards{
+            display: none;
+        }
+
+        .price:first-of-type{
+            display: none;
+        }
+
+        h2:first-of-type{
+            display: none;
+        }
+    }
+
+
+}
+
+.price{
+    color: $darkgrey!important;
+}
+
+.value{
+    width: 87px!important;
+    select{
+        font-size: 25px!important;
+        width: 87px!important;
+        text-align: center;
+    }
+}
+        .variations_form{
+            width: 50%;
+        }
+
+        .woocommerce-variation-price{
+            .price{
+                display: unset!important;
+            }
+        }
+
+        .woocommerce-message{
+            border: 2px solid $red!important;
+            background-color: $white!important;
+            font-size: 1rem;
+        }
+
+
+        .woocommerce-message::before{
+            color: $red;
+        }

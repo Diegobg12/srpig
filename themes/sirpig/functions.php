@@ -81,6 +81,19 @@ function contact_widgets_init() {
 }
 add_action( 'widgets_init', 'contact_widgets_init' );
 
+function domicilios_widgets_init() {
+	register_sidebar( array(
+		'name'          => esc_html( 'Sidebar3' ),
+		'id'            => 'sidebar-3',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'domicilios_widgets_init' );
+
 /**
  * Filter the stylesheet_uri to output the minified CSS file.
  */
@@ -158,3 +171,8 @@ function get_link_url() {
 }
 
 
+function woocommerce_template_loop_stock() {
+    global $product;
+    if ( ! $product->managing_stock() && ! $product->is_in_stock() )
+        echo '<p class="stock out-of-stock">Out of Stock</p>';
+}

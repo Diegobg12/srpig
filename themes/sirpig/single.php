@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area product_page">
+	<div id="primary" class="content-area product_page center-blog">
 		<main id="main" class="site-main" role="main">
 
 		<?php

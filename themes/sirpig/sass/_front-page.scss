@@ -18,6 +18,8 @@
 
         .wp-block-group__inner-container{
             @include flex-row;
+            flex-direction: row-reverse;
+            justify-content: center;
             background-color: $white;
             box-shadow: $overlay;
             width: 89%;
@@ -27,6 +29,9 @@
                 @include sp{
                 width: 100%;
                 }
+                @include tb{
+                    width: 100%;
+                    }
             }
             .nosotros-intro{
                 padding: 3%;
@@ -44,6 +49,9 @@
                 @include sp{
                 width: 100%;
                 }
+                @include tb{
+                    width: 100%;
+                    }
     
             }
             @include sp{
@@ -104,8 +112,9 @@
             padding: 5%;
             @include sp{
                 width: 100%;
-                height: 345px;
-               
+                height: 460px;
+
+
     
                 }
             .description-event{
@@ -128,19 +137,12 @@
 }
 
 
-.eventos{
-  h1{
-      width: 89%;
-      margin: auto;
-      margin-top: 5%;
-      text-align: center;
-  }
-}
+
 
 .center-blog{
     width: 89%;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 10%;
 
     ul{
         @include reset;
@@ -202,3 +204,121 @@
 
     }
 }
+
+
+
+
+    .card-container{
+        @include flex-row;
+        background-color: $white;
+        position: relative;
+        margin-bottom: 2%;
+        margin-top: 3%;
+        box-shadow: $overlay;
+        
+        @include sp{
+        @include flex-column;
+        }
+            h2{
+                @include title-product;
+                text-align: left;
+                font-size: 1.3rem;
+            }
+        flex-wrap: wrap;
+        .image-card{
+            width: 50%;
+            height: 414px;
+            @include sp{
+                width: 100%;
+                height: 314px;
+                }
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .eventos-container{
+            width: 50%;
+            height: 414px;
+            padding: 5%;
+            @include sp{
+                width: 100%;
+                height: 345px;
+               
+    
+                }
+            .description-event{
+                width: 80%;
+            }
+            a{
+                text-decoration: none!important;
+            }
+            .more-events{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                border-top: 4px solid $grey;
+                padding-top: 2%;
+                margin-top: 8%;
+    
+            }
+        }
+    }
+
+    .sucursales:nth-child(even){
+        flex-direction: row-reverse!important;
+    }
+
+    .center-locations{
+        width: 89%;
+        margin: auto;
+    }
+
+
+    .eventos{
+        h1{
+            text-align: center;
+        }
+        .page-center {
+            margin-top: unset;
+        }
+
+        .mision-vision{
+            justify-content: center;
+            .mision{
+                background-color: transparent;
+                border: unset;
+                box-shadow: unset;
+                text-align: center;
+                img{
+                    width: 300px;
+                }
+            }
+    
+            .vision{
+                background-color: transparent;
+                border: unset;
+                box-shadow: unset;
+                text-align: center;
+            }
+        }
+
+        .domicilios-class{
+            h2{
+                width: 100%;
+            }
+            text-align: center;
+            width: 89%;
+            margin: auto;
+            @include flex-row;
+            justify-content: space-around;
+
+            
+            img{
+                width: 250px;
+                height: auto;
+            }
+
+
+        }
+    }

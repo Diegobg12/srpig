@@ -21,13 +21,7 @@
                 width: 139px;
         }
 
-        .wc-proceed-to-checkout{
-            a{
-
-                background: $grey!important;
-                color: $mediumgrey!important;
-            }
-        }
+  
 
         .cart-collaterals{
             width: 100%;
@@ -37,38 +31,15 @@
 
             .cart_totals {
                 width: 70%;
+
+                @include sp{
+                width: 100%;
+
+                }
             }
         }
     }
 
-    h1{
-        font-family: $font_title;
-        font-weight: 100;
-        font-size: 3rem;
-        background: url(../../assets/logo/tittle-back.svg) no-repeat;
-        color: $grey;
-        background-size: 83%;
-        background-position-x: 46%;
-        background-position-y: 20px;
-        height: 89px;
-        margin: 5% 0%;
-        text-align: center;
-    
-        @include pcandtb{
-    
-            font-family: $font_title;
-            font-weight: 100;
-            font-size: 3rem;
-            background: url(../../assets/logo/tittle-back.svg) no-repeat;
-            background-size: 45%;
-            background-position-x: 50%;
-            background-position-y: 16%;
-            height: 115px;
-            margin: 2% 0%;
-            
-        }
-    
-    }
 
 
 

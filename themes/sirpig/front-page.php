@@ -37,22 +37,23 @@ get_header(); ?>
 								</div>
 
 								<div class='eventos-container'>
+								<img class="sirpigGoLogo" src="<?php echo get_template_directory_uri(); ?>/assets/logo/sirpigGoLogo.svg" alt="logo">
 								
 								<h2> Eventos</h2>
-								<a href="<?php echo get_permalink(); ?>">
-									<h1>	<?php the_title();?> </h1>
-									<p class="description-event">	<?php echo wp_trim_words( get_the_content(), $num_words = 25);?> </p>
-									<p>	<a href="<?php echo get_link_url() ;?> " target="_blank">
-									<i class="fas fa-map-marker-alt"></i>
-									Ubicación</a></p>
+									<a href="<?php echo get_permalink(); ?>">
+										<h1>	<?php the_title();?> </h1>
+										<p class="description-event">	<?php echo wp_trim_words( get_the_content(), $num_words = 20 );?> </p>
+										<p>	<a href="<?php echo get_link_url() ;?> " target="_blank">
+										<i class="fas fa-map-marker-alt"></i>
+										Ubicación</a></p>
 
-								</a>
+									</a>
 
-								<a href="google.com/maps?ll=4.669193,-74.073931&z=19&t=m&hl=es&gl=CA&mapclient=embed&cid=11942510028709064983"></a>
-								<p class="more-events"> 
-									<a href="sirpig/eventos/" >Otros eventos</a>
-									<img class="heart" src="<?php echo get_template_directory_uri(); ?>/assets/logo/heart.svg" alt="logo">
-								</p> 
+									<a href="google.com/maps?ll=4.669193,-74.073931&z=19&t=m&hl=es&gl=CA&mapclient=embed&cid=11942510028709064983"></a>
+									<p class="more-events"> 
+										<a href="sirpig/eventos/" >Otros eventos</a>
+										<img class="heart" src="<?php echo get_template_directory_uri(); ?>/assets/logo/heart.svg" alt="logo">
+									</p> 
 							
 								 </div>
 						</div>
@@ -67,6 +68,7 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
+
 
 
 

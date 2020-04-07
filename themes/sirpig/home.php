@@ -9,7 +9,23 @@ get_header(); ?>
 
 	<div id="primary" class="content-area center eventos">
 		<main id="main" class="site-main" role="main">
-		<h1>EVENTOS</h1>
+			<div >
+				<?php
+					$my_id = 461;
+					$post_id_461 = get_post($my_id);
+				?>
+				<?php
+					$content = $post_id_461->post_content;
+					$content = apply_filters('the_content', $content);
+					$content = str_replace(']]>', ']]>', $content);
+					echo $content;
+				?>
+
+				<div id="secondary" class="domicilios-widget" role="complementary">
+						<?php dynamic_sidebar( 'sidebar-3' ); ?>
+				</div><!-- #secondary -->
+			</div>
+			<h1>EVENTOS</h1>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 			<div class=" events-sectios">
@@ -37,10 +53,10 @@ get_header(); ?>
 
 								<div class='eventos-container'>
 								
-								<h2> Eventos</h2>
+								<h2> SirPigGO</h2>
 								<a href="<?php echo get_permalink(); ?>">
 									<h1>	<?php the_title();?> </h1>
-									<p class="description-event">	<?php echo wp_trim_words( get_the_content(), $num_words = 25);?> </p>
+									<p class="description-event">	<?php echo wp_trim_words( get_the_content(), $num_words = 15);?> </p>
 									<p>	<a href="<?php echo get_link_url() ;?> " target="_blank">
 									<i class="fas fa-map-marker-alt"></i>
 									Ubicación</a></p>

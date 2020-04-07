@@ -28,13 +28,20 @@ for (var i = 0; i < btns.length; i++) {
 let product = $('.product')
 $('.add-cart').hide();
 
-
+console.log(product[3])
 
 // Product animation
 // Sub menu animation
 if ($(window).width() > 768) {
   product.hover(function() {
-    $(this).find('a').removeAttr('href');
-    $(this).find('.add-cart').slideToggle();
+    let agotado = $(this).hasClass("outofstock")
+    console.log(agotado)
+    if(agotado == false){
+      $(this).find('a').removeAttr('href');
+      $(this).find('.add-cart').slideToggle();
+    }else{
+      $(this).find('a').removeAttr('href');
+
+    }
     })
-      }
+}

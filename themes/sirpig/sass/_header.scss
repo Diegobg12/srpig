@@ -132,18 +132,35 @@ ul{
         height: 40px;
     }   
 }
-.social-container{
+}
+
+.site-header{
+    text-transform: uppercase;
+}
+
+.social-media-container{
+    
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     right: 18px;
     top: 40vh;
     font-size: 26px;
     a{
-        
         color: $red;
     }
+    @include sp{
+        position: unset;
+        font-size: 26px;
+        .Business-info-class{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            div{
+                margin: 0% 5% ;
+            }
+        }
+        
+    }
 }
-}
-
 

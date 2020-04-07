@@ -23,13 +23,19 @@
 							<h2>CONSULTA</h2>
 							<?php wp_nav_menu(array('theme_location' => 'secondary', 'menu_id' => 'Menu 2')); ?>
 						</div>
+
+						<div id="secondary" class="domicilios-widget" role="complementary">
+							<?php dynamic_sidebar( 'sidebar-3' ); ?>
+						</div><!-- #secondary -->
 					</div>
+		
 					
 					<div>
 					<h2>CONTACTANOS</h2>
-					<?php echo do_shortcode('[contact-form-7 id="37" title="CONTACTENOS"]'); ?>
+					<?php echo do_shortcode('[contact-form-7 id="6" title="CONTACTENOS"]'); ?>
 					</div>
 				</div>
+
 
 				<div id="myDIV">
 					
@@ -46,10 +52,16 @@
 					</div>
 					<div class="ubicaciones">
 						<button id="0"  class="btn">SirPig Chia</button>
-						<button id="1"  class="btn">SirPig Gourmet</button>
+						<button id="1"  class="btn">SirPig Criollo</button>
 						<button id="2"  class="btn active">Barrio Doce de Octubre</button>
 					</div>
+					
+					<div id="secondary" class="social-media-container" role="complementary">
+						<?php dynamic_sidebar( 'sidebar-1' ); ?>
+					</div><!-- #secondary -->
 
+
+					
 					<div class="copyRight">
 						<p>Diseñado por Valent design y Desarrollado por Diego Bustos <?php echo date("Y")?></p>
 					</div>
@@ -61,4 +73,5 @@
 
 	</body>
 </html>
+
 
