@@ -45,6 +45,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 @import url(../../assets/fonts/Handletterink/stylesheet.css);
 @import url(../../assets/fonts/Lato/stylesheet.css);
+@import url(../../assets/fonts/Kaushan/stylesheet.css);
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -476,9 +477,9 @@ a {
   a:visited {
     color: #333333; }
   a:hover {
-    color: #FF0202; }
+    color: #bd0101; }
   a:focus, a:active {
-    color: #FF0202; }
+    color: #bd0101; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -489,7 +490,7 @@ a {
   clear: both;
   display: block;
   float: left;
-  color: #FF0202 !important;
+  color: #bd0101 !important;
   text-decoration: underline; }
   .main-navigation ul {
     display: none;
@@ -523,7 +524,7 @@ a {
     text-decoration: none; }
 
 .current-menu-item a {
-  color: #FF0202 !important;
+  color: #bd0101 !important;
   text-decoration: underline; }
 
 /* Small menu. */
@@ -763,8 +764,8 @@ html {
       margin: 0 !important;
       text-align: center;
       font-size: 35px !important;
-      font-family: "Handletterink";
-      color: #FF0202;
+      font-family: "Kaushan Script";
+      color: #bd0101;
       line-height: 1; }
       @media (max-width: 415px) {
         .products .product h2 {
@@ -849,7 +850,7 @@ html {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.6);
-    color: #FF0202;
+    color: #bd0101;
     width: 100%;
     height: 100%;
     padding: 0 !important;
@@ -879,9 +880,12 @@ html {
     color: transparent; }
   .products .outofstock .product_type_variable::after {
     content: "Agotado";
-    font-family: "Handletterink";
-    color: #FF0202;
+    font-family: "Kaushan Script";
+    color: #bd0101;
     font-size: 3rem; }
+    @media (max-width: 415px) {
+      .products .outofstock .product_type_variable::after {
+        font-size: 2rem; } }
   .products .product-description {
     height: 109px;
     padding: 5% 2%; }
@@ -926,8 +930,8 @@ html {
   margin: 0 !important;
   text-align: center;
   font-size: 35px !important;
-  font-family: "Handletterink";
-  color: #FF0202;
+  font-family: "Kaushan Script";
+  color: #bd0101;
   line-height: 1; }
   @media (max-width: 415px) {
     .title-product {
@@ -939,7 +943,7 @@ html {
   margin: 0 !important; }
 
 .wpcf7-response-output {
-  border: 2px solid #FF0202 !important; }
+  border: 2px solid #bd0101 !important; }
 
 .domicilios-widget aside {
   width: 100%;
@@ -1123,7 +1127,7 @@ html {
   top: 40vh;
   font-size: 26px; }
   .social-media-container a {
-    color: #FF0202; }
+    color: #bd0101; }
   @media (max-width: 415px) {
     .social-media-container {
       position: unset;
@@ -1203,11 +1207,11 @@ html {
       border: none;
       font-size: 1rem; }
     .site-footer .ubicaciones button:hover {
-      color: #FF0202;
+      color: #bd0101;
       background: none;
       border: none; }
     .site-footer .ubicaciones .active {
-      color: #FF0202;
+      color: #bd0101;
       text-decoration: underline; }
   .site-footer .copyRight {
     width: 50%;
@@ -1267,8 +1271,8 @@ html {
     margin: 0 !important;
     text-align: center;
     font-size: 35px !important;
-    font-family: "Handletterink";
-    color: #FF0202;
+    font-family: "Kaushan Script";
+    color: #bd0101;
     line-height: 1; }
     @media (max-width: 415px) {
       .product_page .product-single h1 {
@@ -1298,19 +1302,19 @@ html {
   display: unset !important; }
 
 .woocommerce-message {
-  border: 2px solid #FF0202 !important;
+  border: 2px solid #bd0101 !important;
   background-color: white !important;
   font-size: 1rem; }
 
 .woocommerce-message::before {
-  color: #FF0202; }
+  color: #bd0101; }
 
 .social-media {
   text-align: center; }
   .social-media a {
     color: white; }
   .social-media a:hover {
-    color: #FF0202; }
+    color: #bd0101; }
   .social-media i {
     font-size: 2.5rem;
     margin: 0% 1%; }
@@ -1396,8 +1400,8 @@ html {
     margin: 0 !important;
     text-align: center;
     font-size: 35px !important;
-    font-family: "Handletterink";
-    color: #FF0202;
+    font-family: "Kaushan Script";
+    color: #bd0101;
     line-height: 1;
     text-align: left;
     font-size: 1.3rem; }
@@ -1505,8 +1509,8 @@ html {
     margin: 0 !important;
     text-align: center;
     font-size: 35px !important;
-    font-family: "Handletterink";
-    color: #FF0202;
+    font-family: "Kaushan Script";
+    color: #bd0101;
     line-height: 1;
     text-align: left; }
     @media (max-width: 415px) {
@@ -1524,7 +1528,7 @@ html {
     border: 2px solid #76736C;
     position: relative; }
     .mision-vision .mision .fas {
-      color: #FF0202;
+      color: #bd0101;
       position: absolute;
       top: 2%;
       right: 2%;
@@ -1542,7 +1546,7 @@ html {
     padding: 6% 5% 3% 5%;
     position: relative; }
     .mision-vision .vision .fas {
-      color: #FF0202;
+      color: #bd0101;
       position: absolute;
       top: 2%;
       right: 2%;
@@ -1585,8 +1589,8 @@ html {
     margin: 0 !important;
     text-align: center;
     font-size: 35px !important;
-    font-family: "Handletterink";
-    color: #FF0202;
+    font-family: "Kaushan Script";
+    color: #bd0101;
     line-height: 1;
     text-align: left;
     font-size: 1.3rem; }
@@ -1793,8 +1797,8 @@ html {
   margin: 0 !important;
   text-align: center;
   font-size: 35px !important;
-  font-family: "Handletterink";
-  color: #FF0202;
+  font-family: "Kaushan Script";
+  color: #bd0101;
   line-height: 1; }
   @media (max-width: 415px) {
     .ps-theme-wpc h2 {

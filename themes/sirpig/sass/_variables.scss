@@ -5,7 +5,7 @@ $white: rgb(255, 255, 255);
 $darkgrey: #333333;
 $grey: #EBEBEB;
 $mediumgrey: #76736C;
-$red: #FF0202;
+$red: rgb(189, 1, 1);
 $wine: $red;
 
 // Structure
@@ -30,7 +30,7 @@ $color__link-hover: $darkgrey;
 
 // Typography
 
-$font_title: "Handletterink";
+$font_title: "Kaushan Script";
 $font__main: "Lato", sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;

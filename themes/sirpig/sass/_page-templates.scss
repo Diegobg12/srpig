@@ -154,6 +154,11 @@ html{
                         font-family: $font_title;
                         color: $red;
                         font-size: 3rem;
+
+                        @include sp{
+                        font-size: 2rem;
+
+                        }
                         }
             }
             .product-description{
