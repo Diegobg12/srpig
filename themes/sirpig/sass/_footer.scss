@@ -52,7 +52,10 @@
             button{
                 background:none;
                 border: none;
-                font-size: 1rem;
+                font-size: 1.5rem;
+                @include sp{
+                font-size: 1.2rem;
+                }
             }
             button:hover{
                 color: $red;
@@ -112,6 +115,6 @@
     width: 100%;
     @include pcandtb{
         width: 50%;
-        
+
     }
 }

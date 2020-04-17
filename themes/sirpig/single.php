@@ -20,12 +20,15 @@ get_header(); ?>
 		do_action( 'woocommerce_before_main_content' );
 	?>
 
+
+
+
+
 		<?php if ( have_posts() ) : the_post(); ?>
 
 			<?php wc_get_template_part( 'content', 'single-product' ); ?>
 			
 		<?php endif; // end of the loop. ?>
-
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

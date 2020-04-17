@@ -13,6 +13,10 @@ html{
     width: 89%;
     margin: auto;
     margin-top: 10%;
+    @include sp{
+        margin-top: 20%;
+
+    }
     h1{
         text-align: center;
     }
@@ -168,7 +172,7 @@ html{
                     height: 140px;
                 }
                 @include pc{
-                    height: 109px;
+                    height: 130px;
                 }
                 .woocommerce-loop-product__title{
                     margin: 0;
@@ -179,15 +183,16 @@ html{
                 p{
                     @include reset;
                     text-align: center;
-                    margin: auto!important;
+                    margin: 2% auto!important;
                     font-size: 0.7rem!important;
                     width: 80%;
+
                     @include tb{
                         line-height: 1.4;
                     }
                     @include pc{
                         font-size: 0.9rem!important;
-                        width: 60%;
+                        width: 80%;
                     }
                 }
 
@@ -254,13 +259,41 @@ html{
     width: 25%;
     top: 0;
     right: 0;
-    transform: rotate(20deg);
     @include sp{
         width: 50%;
         top: unset;
         bottom: 3%;
         right: 25%;
-        transform: rotate(0deg);
+
     }
     
+}
+
+.variations{
+    .value{
+        line-height: 3rem!important; 
+    }
+}
+.cart{
+    margin-bottom:0px!important;
+}
+
+.woocommerce-variation-price{
+    margin-bottom:5%!important;
+
+}
+
+.wc-block-product-categories-list{
+    @include reset;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.1rem;
+    @include sp{
+        display: flex;
+    flex-direction: column;
+text-align: center;
+
+    }
 }
