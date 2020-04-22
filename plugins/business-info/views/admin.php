@@ -23,7 +23,7 @@
 		<input class="widefat" id="<?php echo $this->get_field_id('instagram'); ?>" name="<?php echo $this->get_field_name('instagram'); ?>" type="text" value="<?php echo $instagram; ?>">
    </p>
 
-   <p><label for="<?php echo $this->get_field_id('location'); ?>">location:</label>
+   <p><label for="<?php echo $this->get_field_id('location'); ?>">Whatsapp:</label>
 		<input class="widefat" id="<?php echo $this->get_field_id('location'); ?>" name="<?php echo $this->get_field_name('location'); ?>" type="text" value="<?php echo $location; ?>">
    </p>
 
@@ -34,5 +34,6 @@
    <p><label for="<?php echo $this->get_field_id('linkedin'); ?>">Linkedin:</label>
 		<input class="widefat" id="<?php echo $this->get_field_id('linkedin'); ?>" name="<?php echo $this->get_field_name('linkedin'); ?>" type="text" value="<?php echo $linkedin; ?>">
    </p>
+
 
 </div>

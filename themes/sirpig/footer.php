@@ -41,9 +41,18 @@
 					
 					<h2>PUNTOS DE VENTA</h2>
 					<div class="ubicaciones">
-						<button id="0"  class="btn">SirPig Chia</button>
-						<button id="1"  class="btn">SirPig Criollo</button>
-						<button id="2"  class="btn active">SirPig Bogotá</button>
+						<button id="0"  class="btn">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/logo/pig-icon.svg" alt="logo">
+						SirPig Chia
+						</button>
+						<button id="1"  class="btn">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/logo/pig-icon.svg" alt="logo">
+						SirPig Criollo
+						</button>
+						<button id="2"  class="btn active">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/logo/pig-icon.svg" alt="logo">
+						SirPig Bogotá
+						</button>
 					</div>
 
 					<div class='map'>

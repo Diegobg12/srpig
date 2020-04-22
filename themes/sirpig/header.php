@@ -26,7 +26,7 @@
 				
 
 
-				<a class="logo-header" href="">
+				<a class="logo-header" href="/">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/logo/logosinfondo.png" alt="logo">
 				</a>
 

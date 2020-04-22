@@ -778,6 +778,7 @@ html {
       display: none;
       position: absolute;
       width: 100%;
+      padding-bottom: 29%;
       height: 100%;
       bottom: 0;
       left: 0;
@@ -970,9 +971,9 @@ html {
 
 .sirpigGoLogo {
   position: absolute;
-  width: 25%;
-  top: 0;
-  right: 0; }
+  width: 12%;
+  top: 5%;
+  right: 3%; }
   @media (max-width: 415px) {
     .sirpigGoLogo {
       width: 50%;
@@ -1015,6 +1016,143 @@ html {
           -ms-flex-direction: column;
               flex-direction: column;
       text-align: center; } }
+
+.reset {
+  padding: 0 !important;
+  margin: 0 !important; }
+
+.domicilios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 70vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+  @media (max-width: 415px) {
+    .domicilios {
+      height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+  .domicilios div {
+    border-top: solid 3px #bd0101;
+    border-bottom: solid 3px #bd0101;
+    padding: 2% 0%;
+    height: 100%;
+    width: 25%;
+    text-align: center; }
+    .domicilios div h2 {
+      padding: 0 !important;
+      margin: 0 !important;
+      text-align: center;
+      font-size: 35px !important;
+      font-family: "Kaushan Script";
+      color: #bd0101;
+      line-height: 1; }
+      @media (max-width: 415px) {
+        .domicilios div h2 {
+          letter-spacing: 0;
+          font-size: 22px !important; } }
+    .domicilios div i {
+      font-size: 100px;
+      color: #bd0101;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 100%;
+      text-align: center; }
+    @media (max-width: 415px) {
+      .domicilios div {
+        width: 100%;
+        height: auto; } }
+
+.pasos {
+  width: 90%;
+  margin: 5% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+  @media (max-width: 415px) {
+    .pasos {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+  .pasos div {
+    border-top: solid 3px #bd0101;
+    border-bottom: solid 3px #bd0101;
+    padding: 3% 0%;
+    height: 400px;
+    width: 20%;
+    text-align: j; }
+    .pasos div h2 {
+      padding: 0 !important;
+      margin: 0 !important;
+      text-align: center;
+      font-size: 35px !important;
+      font-family: "Kaushan Script";
+      color: #bd0101;
+      line-height: 1; }
+      @media (max-width: 415px) {
+        .pasos div h2 {
+          letter-spacing: 0;
+          font-size: 22px !important; } }
+    .pasos div i {
+      font-size: 100px;
+      color: #bd0101;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 100%;
+      text-align: center; }
+    .pasos div p {
+      font-size: 10px; }
+      @media (max-width: 415px) {
+        .pasos div p {
+          width: 80%;
+          margin: auto; } }
+    @media (max-width: 415px) {
+      .pasos div {
+        width: 100%;
+        height: auto; } }
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .btn img {
+    width: 30px; }
 
 .site-header {
   background-color: #333333;

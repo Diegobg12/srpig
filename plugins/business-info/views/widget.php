@@ -9,6 +9,7 @@
 </div>
     <?php endif; ?>
 
+
     <?php if (strlen(trim($email))>0): ?>
 <div>
         <a href="mailto:<?php echo $email; ?>">
@@ -36,8 +37,8 @@
     <?php if (strlen(trim($location))>0): ?>
 <div>
 
-        <a href="https://www.google.com/maps/place/<?php echo $location; ?>/">
-            <span class="business-info"><i class="fas fa-map-marker-alt"></i></i></span>
+        <a href="<?php echo $location; ?>/">
+            <span class="business-info"><i class="fab fa-whatsapp"></i></i></span>
         </a>
 </div>
     <?php endif; ?>
@@ -57,9 +58,12 @@
 <div>
 
         <a href="https://www.linkedin.com/<?php echo $linkedin; ?> /">
-        <span class="business-info"><i class="fab fa-linkedin"></i></span>
+        <i class="fab fa-whatsapp"></i><
         </a>
 
 </div>
     <?php endif; ?>
+
+
+
 

@@ -53,6 +53,7 @@ html{
                     display: none;    
                     position: absolute;
                    width: 100%;
+                   padding-bottom: 29%;
                    height: 100%;
                    bottom: 0;
                    left: 0;
@@ -256,15 +257,14 @@ html{
 
 .sirpigGoLogo{
     position: absolute;
-    width: 25%;
-    top: 0;
-    right: 0;
+    width: 12%;
+    top: 5%;
+    right:3%;
     @include sp{
         width: 50%;
         top: unset;
         bottom: 3%;
         right: 25%;
-
     }
     
 }
@@ -291,9 +291,103 @@ html{
     justify-content: space-evenly;
     font-size: 1.1rem;
     @include sp{
-        display: flex;
+    display: flex;
     flex-direction: column;
-text-align: center;
+    text-align: center;
 
+    }
+}
+
+.reset{
+    @include reset;
+}
+
+.domicilios{
+    @include flex-row;
+    height: 70vh;
+    justify-content: space-evenly;
+    @include sp{
+    height: auto;
+
+        @include flex-column;
+    }
+    div{
+        h2{
+            @include title-product; 
+        }
+        border-top: solid 3px $red;
+        border-bottom: solid 3px $red;
+        padding: 2% 0%;
+        height: 100%;
+        i{
+            font-size: 100px;
+            color: $red;
+            justify-content: center;
+            width: 100%;
+            text-align: center;
+
+        }
+        width: 25%;
+        text-align: center;
+        @include sp{
+        width: 100%;
+        height: auto;
+
+        }
+    }
+    
+}
+
+.pasos{
+    width: 90%;
+    margin: 5% auto;
+    @include flex-row;
+    text-align: center;
+
+    justify-content: space-evenly;
+    @include sp{
+        @include flex-column;
+    }
+    div{
+        h2{
+    @include title-product;
+             
+        }
+        border-top: solid 3px $red;
+        border-bottom: solid 3px $red;
+        padding: 3% 0%;
+        height: 400px;
+        i{
+            font-size: 100px;
+            color: $red;
+            justify-content: center;
+            width: 100%;
+            text-align: center;
+        }
+        p{
+            font-size: 10px;
+
+            @include sp{
+                width: 80%;
+                margin: auto;
+            
+
+            }
+        }
+        width: 20%;
+        text-align: j;
+        @include sp{
+        width: 100%;
+        height: auto;
+        }
+    }
+
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    img{
+        width: 30px;
     }
 }

@@ -105,6 +105,8 @@ class Business_info extends WP_Widget {
 		$location = empty( $instance['location'] ) ? '' : apply_filters( 'location', $instance['location'] );
 		$youtube = empty( $instance['youtube'] ) ? '' : apply_filters( 'youtube', $instance['youtube'] );
 		$linkedin = empty( $instance['linkedin'] ) ? '' : apply_filters( 'linkedin', $instance['linkedin'] );
+		$wp = empty( $instance['wp'] ) ? '' : apply_filters( 'wp', $instance['wp'] );
+
 
 
 		// TODO: other fields go here...
@@ -143,6 +145,8 @@ class Business_info extends WP_Widget {
 		$instance['location'] = strip_tags( $new_instance['location'] );
 		$instance['youtube'] = strip_tags( $new_instance['youtube'] );
 		$instance['linkedin'] = strip_tags( $new_instance['linkedin'] );
+		$instance['wp'] = strip_tags( $new_instance['wp'] );
+
 
 		
 
@@ -171,6 +175,9 @@ class Business_info extends WP_Widget {
 				'location'=> '',
 				'youtube'=> '',
 				'linkedin'=> '',
+				'wp'=> '',
+
+				
 			)
 		);
 		$title = strip_tags( $instance['title'] );
@@ -181,6 +188,8 @@ class Business_info extends WP_Widget {
 		$location = strip_tags( $instance['location'] );
 		$youtube = strip_tags( $instance['youtube'] );
 		$linkedin = strip_tags( $instance['linkedin'] );
+		$wp = strip_tags( $instance['wp'] );
+
 
 
 		// TODO: Store the rest of values of the widget in their own variables
