@@ -326,3 +326,26 @@
 
         }
     }
+
+
+    .cat-front-page{
+        width: 89%;
+        margin: auto;
+        .wp-block-group__inner-container{
+            color: red;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .wc-block-featured-category{
+                width: 30% !important;
+                height: 250px!important;
+                min-height: 100px!important;
+                .wc-block-featured-category__title{
+                    @include title-product;
+
+                }
+            }
+        }
+
+    }

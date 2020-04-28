@@ -1133,6 +1133,11 @@ html {
               justify-content: center;
       width: 100%;
       text-align: center; }
+    .pasos div a:hover {
+      -webkit-transition: all 1s;
+      transition: all 1s; }
+      .pasos div a:hover i {
+        font-size: 120px; }
     .pasos div p {
       font-size: 10px; }
       @media (max-width: 415px) {
@@ -1153,6 +1158,102 @@ html {
           align-items: center; }
   .btn img {
     width: 30px; }
+
+.category-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style: url(/wp-content/themes/sirpig/assets/logo/pig-icon.svg);
+  margin-bottom: 2% !important; }
+
+.categories-front {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  width: 89%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-decoration: none !important; }
+  .categories-front h1 {
+    width: 100%;
+    text-align: center; }
+  .categories-front .cat {
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    width: 30%;
+    background-color: white; }
+    .categories-front .cat img {
+      width: 100%; }
+    .categories-front .cat h2 {
+      padding: 0 !important;
+      margin: 0 !important;
+      text-align: center;
+      font-size: 35px !important;
+      font-family: "Kaushan Script";
+      color: #bd0101;
+      line-height: 1;
+      padding: 7% 10% !important;
+      text-decoration: none !important; }
+      @media (max-width: 415px) {
+        .categories-front .cat h2 {
+          letter-spacing: 0;
+          font-size: 22px !important; } }
+    @media (max-width: 415px) {
+      .categories-front .cat {
+        width: 45%; } }
+
+.pagina-principal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .pagina-principal .categories-front {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+  .pagina-principal .nosotros-title {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3; }
+  .pagina-principal .nosotros-section {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4; }
+  .pagina-principal .eventos-title {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5; }
+  .pagina-principal .events-sectios {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6; }
+
+.mapa-covertura {
+  width: 90%;
+  margin: 5% auto; }
 
 .site-header {
   background-color: #333333;
@@ -1863,6 +1964,40 @@ html {
   .eventos .domicilios-class img {
     width: 250px;
     height: auto; }
+
+.cat-front-page {
+  width: 89%;
+  margin: auto; }
+  .cat-front-page .wp-block-group__inner-container {
+    color: red;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .cat-front-page .wp-block-group__inner-container .wc-block-featured-category {
+      width: 30% !important;
+      height: 250px !important;
+      min-height: 100px !important; }
+      .cat-front-page .wp-block-group__inner-container .wc-block-featured-category .wc-block-featured-category__title {
+        padding: 0 !important;
+        margin: 0 !important;
+        text-align: center;
+        font-size: 35px !important;
+        font-family: "Kaushan Script";
+        color: #bd0101;
+        line-height: 1; }
+        @media (max-width: 415px) {
+          .cat-front-page .wp-block-group__inner-container .wc-block-featured-category .wc-block-featured-category__title {
+            letter-spacing: 0;
+            font-size: 22px !important; } }
 
 .cart-page {
   width: 90%;

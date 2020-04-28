@@ -176,3 +176,41 @@ function woocommerce_template_loop_stock() {
     if ( ! $product->managing_stock() && ! $product->is_in_stock() )
         echo '<p class="stock out-of-stock">Out of Stock</p>';
 }
+
+
+add_action( 'woocommerce_archive_description', 'woocommerce_category_image', 2 );
+function woocommerce_category_image() {
+    if ( is_product_category() ){
+	    global $wp_query;
+	    $cat = $wp_query->get_queried_object();
+	    $thumbnail_id = get_term_meta( $cat->term_id, 'thumbnail_id', true );
+	    $image = wp_get_attachment_url( $thumbnail_id );
+	    if ( $image ) {
+		    echo '<img src="' . $image . '" alt="' . $cat->name . '" />';
+		}
+	}
+}
+
+// Establecer un importe minimo en la compra
+function woocommerce_importe_minimo() {
+	$minimum = 100000;  // Debes cambiar el 20 por el importe mínimo que quieras establecer en tu pedido
+	if ( WC()->cart->total < $minimum ) {
+	  if( is_cart() ) {
+		wc_print_notice(
+		sprintf( ' Debes realizar un pedido mínimo de %s para finalizar su compra.' , // Pon aquí el texto que quieras que se muestre en el carrito de compra.
+		  wc_price( $minimum ),
+		  wc_price( WC()->cart->total )
+		), 'error'
+		);
+	  } else {
+		wc_add_notice(
+		sprintf( 'No puedes finalizar tu compra. Debes realizar un pedido mínimo de %s para finalizar su compra.' , // Pon aquí el texto que quieras que se muestre en la página de finalizar compra.
+		  wc_price( $minimum ), 
+		  wc_price( WC()->cart->total )
+		), 'error'
+		);
+	  }
+	}
+  }
+  add_action( 'woocommerce_checkout_process', 'woocommerce_importe_minimo' );
+  add_action( 'woocommerce_before_cart' , 'woocommerce_importe_minimo' );

@@ -364,6 +364,14 @@ html{
             width: 100%;
             text-align: center;
         }
+        a:hover{
+            transition: all 1s;
+            i{
+
+                font-size: 120px;
+            }
+
+        }
         p{
             font-size: 10px;
 
@@ -390,4 +398,78 @@ html{
     img{
         width: 30px;
     }
+}
+
+.category-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    @include reset;
+    list-style: url(/wp-content/themes/sirpig/assets/logo/pig-icon.svg);
+    margin-bottom: 2%!important;
+
+}
+
+
+.categories-front{
+    order: 0;
+    width: 89%;
+    margin: auto;
+    @include flex-row;
+    justify-content: space-between;
+    text-decoration: none !important;
+    
+    h1{
+        width: 100%;
+        text-align: center;
+    }
+    .cat{
+    box-shadow: $overlay;
+
+        img{
+            width: 100%;
+        }
+        width: 30%;
+        background-color: $white;
+            h2{
+                @include title-product;
+                padding: 7% 10%!important;
+                text-decoration: none !important;
+            }
+          @include sp{
+            width: 45%;
+
+          }  
+    }
+}
+
+.pagina-principal{
+    display: flex;
+    flex-direction: column;
+
+    .categories-front{
+        order: 2;
+
+    }
+    .nosotros-title{
+        order: 3;
+
+    }
+    .nosotros-section{
+        order: 4;
+
+    }
+    .eventos-title{
+        order: 5;
+
+    }
+    .events-sectios{
+        order: 6;
+
+    }
+}
+
+.mapa-covertura{
+    width: 90%;
+    margin: 5% auto;
 }

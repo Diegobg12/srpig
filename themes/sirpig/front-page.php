@@ -8,11 +8,30 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area front-page">
-		<main id="main" class="site-main event-section" role="main">
+		<main id="main" class="site-main event-section pagina-principal" role="main">
 			
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php the_content( 'template-parts/content', 'page' ); ?>
+				<div id="categories" class="categories-front">
+					<h1> PRODUCTOS</h1>
+
+					<?php
+					// Get all product categories
+					$product_category_terms = get_terms( array(
+					'taxonomy'   => "product_cat",
+					'hide_empty' => 1,
+					));
+					foreach($product_category_terms as $term){
+					$term_link = get_term_link( $term, 'product_cat' );
+					echo '<a class="cat" href="' . $term_link . '" style="display:inline-block; text-align:center; margin-bottom: 14px;">';
+					woocommerce_subcategory_thumbnail( $term );
+					echo '<h2>' .$term->name.'</h2>';
+					echo '</a>';
+					}
+					?>
+
+				</div>
 
 				<div class ="events-sectios">
 					
@@ -71,5 +90,9 @@ get_header(); ?>
 
 
 
-
+<!-- wp:shortcode -->
+<!-- <div class="products-section">
+[products limit="6" columns="3" orderby="id" order="ASC" visibility="visible"]
+</div> -->
+<!-- /wp:shortcode -->
 
